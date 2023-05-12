@@ -27,11 +27,11 @@ jobs:
 workflows:
   sequential-job:
     jobs:
-      - "ruby-27"
+      - "ruby-32"
       - "ruby-30":
           requires:
-            - "ruby-27"
-      - "ruby-32":
+            - "ruby-32"
+      - "ruby-27":
           requires:
             - "ruby-30"
   conditional-job:
